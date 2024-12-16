@@ -22,6 +22,7 @@ void enqueue(int value){
             front = 0;//inserting 1st element
         rear++;
         A[rear] = value;
+        cout << "Enqueued Value: " << A[rear] << endl;
     }
 }
 
@@ -32,6 +33,7 @@ void dequeue(){
         if(front == rear){
             front = rear = -1;
         }else{
+            cout << "Dequeued Value: " << A[front] << endl;
             front++;
         }
     }
